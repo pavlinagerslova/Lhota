@@ -1,0 +1,115 @@
+@use 'settings';
+@use "generic";
+@use 'elements';
+
+.footer {
+
+    &__container {
+        background: url(/images/foto-2.png) no-repeat bottom center/100% settings.$form-background;
+        border-top: 5px solid transparent;
+        border-image: linear-gradient(to right, settings.$main-mid2 25%,settings.$secondary-color3 25%,settings.$secondary-color3 50%,settings.$secondary-color2 50%,settings.$secondary-color2 75%,settings.$secondary-color1 75%) 1;
+    }
+
+    &__erb {
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        margin-top: 16px;
+    }
+}
+
+.footer__row {
+    text-align: center;
+
+    &-img {
+        width: 100%;
+    }
+}
+
+.footer__col {
+    padding: 15px;
+}
+
+.footer__service {
+    background: settings.$main-dark;
+
+    &-row {
+        padding: 30px;
+        }
+
+    &-text {
+        font: normal normal settings.$size-small-text settings.$noto-sans; 
+        color: settings.$white-background;
+    }
+
+    &-col {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    &-left-col {
+        display: grid;
+        justify-items: center;
+    }
+}
+
+@media  screen and (min-width: 576px) {
+    
+    .footer__container {
+        padding-bottom: 5rem;
+    }
+}
+
+@media  screen and (min-width: 992px) {
+
+    .footer__row {
+        padding: 15px;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .footer__col-cities {
+        display: grid;
+        align-content: center;
+    }
+
+    .footer__col-contacts, .footer__col-opening-hours {
+        text-align: left;
+    }
+
+    .footer__container {
+        padding-bottom: 15rem;
+    }
+
+    .footer__service {
+    
+        &-col {
+            padding: 0;
+        }
+
+        &-left-col {
+            text-align-last: left;
+            display: flex;
+        }
+
+        &-img {
+            padding-right: 20px;
+        }
+
+        &-right-col {
+            text-align-last: right;
+            display: grid;
+            align-content: center;
+        }
+
+        &-row {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        &-img {
+            margin-right: 20pX;
+        }
+    }
+}

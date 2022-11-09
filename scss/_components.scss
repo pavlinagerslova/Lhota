@@ -1,0 +1,245 @@
+@use 'settings';
+@use 'generic';
+@use 'elements';
+
+/*Main navigation*/
+.main-nav {
+    display: none;
+}
+
+/*Opening background*/
+.opening-background {
+    display: none;
+}
+
+/*Secondary navigation*/
+.nav__links__col {
+    height: 118px;
+}
+
+.nav__item {
+    background: settings.$form-background;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+    &-desc {
+        font: normal bold 18px settings.$mulish;
+        letter-spacing: 0;
+        color: settings.$main-mid;
+    }
+
+    &-img {
+        width: 24px;
+        height: 40px;
+    }
+    
+    &-link {
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+    }
+}
+
+
+.nav__item:hover{
+    background: transparent linear-gradient(116deg, settings.$main-dark 0%, settings.$main-dark2 100%);
+    color: settings.$secondary-color3;
+}
+
+.nav__links__col:hover .nav__item-desc{
+    color: settings.$secondary-color3;
+}
+
+/*Actualities*/
+.actualities {
+    padding-top: 15px;
+    padding-bottom: 25px;
+
+    &__row {
+        text-align: center;
+    }
+
+    &__header {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+}
+
+.actuality {
+    border-bottom: 1px solid settings.$line;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    &__date {
+        font: normal italic 16px settings.$noto-sans;
+        color: settings.$main-dark;
+    }
+    &__date::before {
+        display: inline-block;
+        line-height: 1px;
+        content: "\f073";
+        font-family: 'Font Awesome\ 5 Free';
+        margin-right: 5px;
+    }
+
+    &__desc {
+        margin-top: 16px;
+    }
+
+    &__header {
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: settings.$main-mid3;
+        line-height: 28px;
+    }
+
+    &__link {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+    }
+}
+
+.actuality:hover .actuality__header {
+    text-decoration: none;
+    color: settings.$main-dark;
+}
+
+@media  screen and (min-width: 576px) {
+
+/*Main navigation*/
+    .main-nav {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background: settings.$main-dark;
+        
+        &__item {
+            height: 100%;
+            width: 100%;
+        }
+           
+        &__link {
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            padding: 10px;
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+            font: normal normal settings.$size-small-text settings.$mulish; 
+            color: settings.$white-background;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &__links__col {
+            border-right: 1px solid settings.$main-light;
+            height: 70px;
+            padding: 0;
+        }
+
+        &__links__col:first-of-type {
+            border-left: 1px solid settings.$main-light;
+        }
+    }
+    
+    .main-nav__links__col:hover {
+        background: settings.$secondary-color3;
+        border: none;
+    }
+    
+    .main-nav__links__col:hover .main-nav__link {
+        color: settings.$main-mid4;
+    }    
+
+/*Opening background*/
+    .opening-background {
+        margin: 0;
+        display: block;
+        background: url(/images/swiper\ M.png) center no-repeat;
+        background-size: cover;
+        height: 300px;
+    }
+
+/*Secondary navigation*/
+    .nav__container {
+        padding-top: 25px ;
+        padding-bottom: 15px;
+    }
+
+/*Actualities*/
+    .actuality {
+
+        &__img {
+            margin-right: 15px;
+        }
+
+        &__link {
+            display: flex;
+            text-align: left;
+        }
+        
+        &__link-text {
+            margin-right: 48px;
+        }
+    }
+}
+
+@media  screen and (min-width: 992px) {
+
+/*Main navigation*/
+    .main-nav{
+        
+        &__link {
+            font-size: 20px;
+
+        }
+        &__links {
+            width: 90%;
+            max-width: 1600px;
+        }
+    }
+
+/*Opening background*/
+
+    .opening-background {
+        height: 480px;
+    }
+
+/*Secondary navigation*/
+
+    .nav {
+
+        &__container {
+            max-width: 1600px;
+        }
+
+        &__item-desc {
+            font-size: 22px;
+        }
+    }
+
+/*Actualities*/
+
+    .actuality {
+        height: 206px;
+
+        &__header {
+            font-size: 22px;
+        }
+
+        &__date {
+            font-size: 18px;
+        }
+    }
+
+    .actualities__header {
+        text-align: left;
+        font-size: 36px;
+    }
+}

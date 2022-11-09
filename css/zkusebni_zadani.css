@@ -1,0 +1,166 @@
+:root {
+
+/* Colors: */
+--unnamed-color-003566: #003566;
+--unnamed-color-0f5499: #0F5499;
+--unnamed-color-1ba300: #1BA300;
+--unnamed-color-b10b22: #B10B22;
+--unnamed-color-fbbb0e: #FBBB0E;
+--unnamed-color-004380: #004380;
+--unnamed-color-007af2: #007AF2;
+--unnamed-color-408fcf: #408FCF;
+--unnamed-color-0056a3: #0056A3;
+--podklad: #FFFFFF;
+--zvýraznění: #4D4D4D;
+--linka: #DAE6F2;
+--podklad-formuláře: #EBF1F7;
+
+/* Font/text values */
+--unnamed-font-family-mulish: 'Mulish', sans-serif;
+--unnamed-font-family-noto-sans: 'Noto Sans', sans-serif;
+--unnamed-font-family-roboto: 'Roboto', sans-serif;
+--unnamed-font-style-normal: normal;
+--unnamed-font-style-italic: italic;
+--unnamed-font-weight-300: 300px;
+--unnamed-font-weight-normal: normal;
+--unnamed-font-weight-bold: bold;
+--unnamed-font-size-16: 16px;
+--unnamed-font-size-18: 18px;
+--unnamed-font-size-20: 20px;
+--unnamed-font-size-24: 24px;
+--unnamed-font-size-28: 28px;
+--unnamed-font-size-32: 32px;
+--unnamed-character-spacing-0: 0px;
+--unnamed-line-spacing-22: 22px;
+--unnamed-line-spacing-23: 23px;
+--unnamed-line-spacing-24: 24px;
+--unnamed-line-spacing-25: 25px;
+--unnamed-line-spacing-27: 27px;
+--unnamed-line-spacing-30: 30px;
+--unnamed-line-spacing-35: 35px;
+--unnamed-line-spacing-40: 40px;
+--unnamed-decoration-underline: underline;
+}
+
+/* Character Styles */
+.text {
+font-family: var(--unnamed-font-family-noto-sans);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-18);
+line-height: var(--unnamed-line-spacing-27);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--zvýraznění);
+}
+.datum {
+font-family: var(--unnamed-font-family-noto-sans);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-18);
+line-height: var(--unnamed-line-spacing-22);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-004380);
+}
+.h1-nadpis {
+font-family: var(--unnamed-font-family-mulish);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-32);
+line-height: var(--unnamed-line-spacing-40);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-0056a3);
+}
+.h2-nadpis {
+font-family: var(--unnamed-font-family-mulish);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-28);
+line-height: var(--unnamed-line-spacing-35);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-0056a3);
+}
+.kurzíva-malá {
+font-family: var(--unnamed-font-family-roboto);
+font-style: var(--unnamed-font-style-italic);
+font-weight: var(--unnamed-font-weight-300);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--zvýraznění);
+}
+.h3-nadpis {
+font-family: var(--unnamed-font-family-mulish);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-24);
+line-height: var(--unnamed-line-spacing-30);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-0056a3);
+}
+.modul-sloupec-nadpis {
+font-family: var(--unnamed-font-family-mulish);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-18);
+line-height: var(--unnamed-line-spacing-23);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--podklad);
+}
+.h4-nadpis {
+font-family: var(--unnamed-font-family-mulish);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-20);
+line-height: var(--unnamed-line-spacing-25);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-0056a3);
+}
+.odkaz {
+font-family: var(--unnamed-font-family-noto-sans);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-18);
+line-height: var(--unnamed-line-spacing-27);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-007af2);
+text-decoration: var(--unnamed-decoration-underline);
+}
+.h4-odkaz {
+font-family: var(--unnamed-font-family-mulish);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-20);
+line-height: var(--unnamed-line-spacing-25);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-007af2);
+text-decoration: var(--unnamed-decoration-underline);
+}
+.h3-odkaz {
+font-family: var(--unnamed-font-family-mulish);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-24);
+line-height: var(--unnamed-line-spacing-30);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-007af2);
+text-decoration: var(--unnamed-decoration-underline);
+}
+.text-maly {
+font-family: var(--unnamed-font-family-roboto);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--zvýraznění);
+}
+.h2-odkaz {
+font-family: var(--unnamed-font-family-mulish);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-28);
+line-height: var(--unnamed-line-spacing-35);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-007af2);
+text-decoration: var(--unnamed-decoration-underline);
+}

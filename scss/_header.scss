@@ -1,0 +1,200 @@
+@use 'settings';
+@use "generic";
+@use 'elements';
+
+.header__mobile-navbar {
+    background: settings.$main-dark;
+    padding: 5px 20px;
+
+    &-icon {
+        padding: 5px;
+        display: inline-block;
+        height: 100%;
+    }
+}
+
+.header__mobile-navbar-icon:hover {
+    background: settings.$secondary-color3;
+}
+
+.header__mobile-navbar-icon:hover .mobile-navbar-icon {
+    color: settings.$main-dark;
+}
+
+.mobile-navbar-icon {
+    color: settings.$secondary-color3;
+}
+
+.header__mobile-navbar-toggler:hover {
+    background: settings.$secondary-color3;
+}
+
+.header__mobile-nav-link {
+    font: normal bold 18px settings.$mulish;
+    letter-spacing: 0;
+}
+
+.header__mobile-nav-link:hover {
+    color: settings.$secondary-color3;
+}
+
+.header {
+
+    &__container {
+        border-top: 5px solid transparent;
+        border-image: linear-gradient(to right, settings.$main-mid2 25%,settings.$secondary-color3 25%,settings.$secondary-color3 50%,settings.$secondary-color2 50%,settings.$secondary-color2 75%,settings.$secondary-color1 75%) 1;
+    }
+
+    &__left {
+        display: grid;
+        justify-content: center;
+        background: settings.$white-background;
+    }
+
+    &__left-crest {
+        text-decoration: none;
+        display: flex;
+        align-items: flex-end;
+        padding: 15px;
+    }
+}
+
+.header__mid, .header__right, .header__right2  {
+    display: none;
+}
+
+@media  screen and (min-width: 576px) {
+
+    .header__mobile-navbar {
+        display: none;
+    }
+    
+    .header {
+
+        &-icon {
+            color: settings.$main-mid2;
+        }
+
+        &__left-name {
+            font-size: 32px;
+        }
+
+        &__link-icon {
+            text-decoration: none;
+            width: 60px;
+            height: 60px;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+
+        &__mid {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            align-content: center;
+            justify-items: center;
+        }
+
+        &__right {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: grid;
+            align-content: center;
+        }
+
+        &__right-form {
+            height: 40px;
+            max-width: 350px;
+            margin: 0 auto;
+            border: 1px solid settings.$line;
+        }
+
+        &__right2 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: grid;
+            align-content: center;
+            justify-items: center;
+        }
+    }
+
+    .header__link-icon:hover {
+        background: settings.$main-mid;
+    }
+
+    .header__link-icon:hover .header-icon {
+        color: settings.$secondary-color3;
+    }
+
+    .form-control {
+        border: none;
+        background: settings.$white-background;
+    }
+
+    .form-control::placeholder {
+        font: italic normal settings.$size-small-text settings.$noto-sans;
+        color: #808080;
+    }
+
+    .submit {
+        background: settings.$white-background;
+        border: none;
+
+        &-icon {
+            font-size: 18px;
+        }
+    }
+
+    .submit:hover {
+        background: settings.$main-light;
+    }
+    
+    .submit-icon, .header-icon {
+        color: settings.$main-mid2;
+    }
+}
+
+@media  screen and (min-width: 992px) {
+
+    .header {
+         
+        &__container {
+            height: 130px;
+            background: linear-gradient(to right, settings.$white-background 25%, settings.$form-background 25%);
+        }
+
+        &__left {
+            align-content: center;
+        }
+        
+        &__left-name {
+            font-size: 42px;
+        }
+       
+        &__mid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            align-content: center;
+            justify-items: center;
+        }
+
+        &__right {
+            display: grid;
+            align-content: center;
+        }
+
+        &__right2 {
+            display: grid;
+            align-content: center;
+            justify-items: center;
+        }
+
+        &__row {
+            height: 100%;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+    }
+}
