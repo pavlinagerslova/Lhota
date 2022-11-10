@@ -1,0 +1,27 @@
+@use 'settings';
+@use 'generic';
+@use 'elements';
+
+/*Opening background*/
+
+.opening-background {
+    display: none;
+}
+
+@media  screen and (min-width: 576px) {  
+
+    .opening-background {
+        margin: 0;
+        display: block;
+        background: url(/images/swiper\ M.png) center no-repeat;
+        background-size: cover;
+        height: 300px;
+    }
+}
+
+@media  screen and (min-width: 992px) {
+
+    .opening-background {
+        height: 480px;
+    }    
+}

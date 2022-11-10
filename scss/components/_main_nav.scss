@@ -1,0 +1,72 @@
+@use 'settings';
+@use 'generic';
+@use 'elements';
+
+/*Main navigation*/
+
+.main-nav {
+    display: none;
+}
+
+@media  screen and (min-width: 576px) {
+
+    .main-nav {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background: settings.$main-dark;
+        
+        &__item {
+            height: 100%;
+            width: 100%;
+        }
+               
+        &__link {
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            padding: 10px;
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+            font: normal normal settings.$size-small-text settings.$mulish; 
+            color: settings.$white-background;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    
+        &__links__col {
+            border-right: 1px solid settings.$main-light;
+            height: 70px;
+            padding: 0;
+        }
+    
+        &__links__col:first-of-type {
+            border-left: 1px solid settings.$main-light;
+        }
+    }
+        
+    .main-nav__links__col:hover {
+        background: settings.$secondary-color3;
+        border: none;
+    }
+    
+    .main-nav__links__col:hover .main-nav__link {
+        color: settings.$main-mid4;
+    }    
+}
+
+@media  screen and (min-width: 992px) {
+
+    .main-nav{
+        
+        &__link {
+            font-size: 20px;
+        }
+        
+        &__links {
+            width: 90%;
+            max-width: 1600px;
+        }
+    }
+}

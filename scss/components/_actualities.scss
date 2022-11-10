@@ -1,0 +1,164 @@
+@use 'settings';
+@use 'generic';
+@use 'elements';
+
+/*Actualities*/
+
+.actualities {
+    padding-top: 15px;
+    padding-bottom: 25px;
+
+    &__row {
+        text-align: center;
+    }
+
+    &__header {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+}
+
+.actuality {
+    border-bottom: 1px solid settings.$line;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    &__date {
+        font: normal italic 16px settings.$noto-sans;
+        color: settings.$main-dark;
+    }
+    &__date::before {
+        font-style: normal;
+        display: inline-block;
+        line-height: 1px;
+        content: "\f073";
+        font-family: 'Font Awesome\ 5 Free';
+        margin-right: 5px;
+    }
+
+    &__desc {
+        margin-top: 16px;
+    }
+
+    &__header {
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: settings.$main-mid3;
+        line-height: 28px;
+    }
+
+    &__link {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+    }
+}
+
+.actuality:hover .actuality__header {
+    text-decoration: none;
+    color: settings.$main-dark;
+}
+
+@media  screen and (min-width: 576px) {  
+
+    .actuality {
+
+        &__img {
+            margin-right: 15px;
+        }
+
+        &__link {
+            display: flex;
+            text-align: left;
+        }
+            
+        &__link-text {
+            margin-right: 48px;
+        }
+    }
+}
+
+@media  screen and (min-width: 992px) {
+/*Actualities*/
+
+    .actuality {
+        height: 206px;
+
+        &__header {
+            font-size: 22px;
+        }
+
+        &__date {
+            font-size: 18px;
+        }
+    }
+
+    .actualities__header {
+        text-align: left;
+        font-size: 36px;
+    }
+}
+
+@media  screen and (min-width: 992px) {
+/*Actualities*/
+
+    .actuality {
+        height: 206px;
+
+        &__header {
+            font-size: 22px;
+        }
+
+        &__date {
+            font-size: 18px;
+        }
+    }
+
+    .actualities__header {
+        text-align: left;
+        font-size: 36px;
+    }
+}
+
+@media  screen and (min-width: 992px) {
+/*Actualities*/
+
+    .actuality {
+        height: 206px;
+
+        &__header {
+            font-size: 22px;
+        }
+
+        &__date {
+            font-size: 18px;
+        }
+    }
+
+    .actualities__header {
+        text-align: left;
+        font-size: 36px;
+    }
+}
+
+@media  screen and (min-width: 992px) {
+
+    .actuality {
+        height: 206px;
+
+        &__header {
+            font-size: 22px;
+        }
+
+        &__date {
+            font-size: 18px;
+        }
+    }
+
+    .actualities__header {
+        text-align: left;
+        font-size: 36px;
+    }
+}
+    

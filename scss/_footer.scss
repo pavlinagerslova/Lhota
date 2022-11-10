@@ -34,12 +34,18 @@
 .footer__service {
     background: settings.$main-dark;
 
+    &-link {
+        text-decoration: underline;
+        font: normal italic settings.$size-small-text settings.$noto-sans; 
+        color: settings.$white-background;
+    }
+
     &-row {
         padding: 30px;
         }
 
     &-text {
-        font: normal normal settings.$size-small-text settings.$noto-sans; 
+        font: normal italic settings.$size-small-text settings.$noto-sans; 
         color: settings.$white-background;
     }
 
@@ -52,6 +58,11 @@
         display: grid;
         justify-items: center;
     }
+}
+
+.footer__service-link:hover {
+    text-decoration: none;
+    color: settings.$white-background;
 }
 
 @media  screen and (min-width: 576px) {

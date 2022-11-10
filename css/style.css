@@ -291,11 +291,16 @@ li {
 .footer__service {
   background: #004380;
 }
+.footer__service-link {
+  text-decoration: underline;
+  font: normal italic 16px "Noto Sans", sans-serif;
+  color: #FFFFFF;
+}
 .footer__service-row {
   padding: 30px;
 }
 .footer__service-text {
-  font: normal normal 16px "Noto Sans", sans-serif;
+  font: normal italic 16px "Noto Sans", sans-serif;
   color: #FFFFFF;
 }
 .footer__service-col {
@@ -305,6 +310,11 @@ li {
 .footer__service-left-col {
   display: grid;
   justify-items: center;
+}
+
+.footer__service-link:hover {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 @media screen and (min-width: 576px) {
@@ -356,100 +366,7 @@ li {
   display: none;
 }
 
-/*Opening background*/
-.opening-background {
-  display: none;
-}
-
-/*Secondary navigation*/
-.nav__links__col {
-  height: 118px;
-}
-
-.nav__item {
-  background: #EBF1F7;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-.nav__item-desc {
-  font: normal bold 18px "Mulish", sans-serif;
-  letter-spacing: 0;
-  color: #0F5499;
-}
-.nav__item-img {
-  width: 24px;
-  height: 40px;
-}
-.nav__item-link {
-  display: block;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-}
-
-.nav__item:hover {
-  background: transparent linear-gradient(116deg, #004380 0%, #002240 100%);
-  color: #FBBB0E;
-}
-
-.nav__links__col:hover .nav__item-desc {
-  color: #FBBB0E;
-}
-
-/*Actualities*/
-.actualities {
-  padding-top: 15px;
-  padding-bottom: 25px;
-}
-.actualities__row {
-  text-align: center;
-}
-.actualities__header {
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-.actuality {
-  border-bottom: 1px solid #DAE6F2;
-  margin-bottom: 20px;
-  padding: 15px;
-}
-.actuality__date {
-  font: normal italic 16px "Noto Sans", sans-serif;
-  color: #004380;
-}
-.actuality__date::before {
-  display: inline-block;
-  line-height: 1px;
-  content: "\f073";
-  font-family: "Font Awesome 5 Free";
-  margin-right: 5px;
-}
-.actuality__desc {
-  margin-top: 16px;
-}
-.actuality__header {
-  text-decoration: underline;
-  text-transform: uppercase;
-  font-size: 16px;
-  color: #007AF2;
-  line-height: 28px;
-}
-.actuality__link {
-  display: block;
-  width: 100%;
-  text-decoration: none;
-}
-
-.actuality:hover .actuality__header {
-  text-decoration: none;
-  color: #004380;
-}
-
 @media screen and (min-width: 576px) {
-  /*Main navigation*/
   .main-nav {
     margin: 0;
     display: flex;
@@ -488,7 +405,22 @@ li {
   .main-nav__links__col:hover .main-nav__link {
     color: #003566;
   }
-  /*Opening background*/
+}
+@media screen and (min-width: 992px) {
+  .main-nav__link {
+    font-size: 20px;
+  }
+  .main-nav__links {
+    width: 90%;
+    max-width: 1600px;
+  }
+}
+/*Opening background*/
+.opening-background {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
   .opening-background {
     margin: 0;
     display: block;
@@ -496,12 +428,115 @@ li {
     background-size: cover;
     height: 300px;
   }
-  /*Secondary navigation*/
+}
+@media screen and (min-width: 992px) {
+  .opening-background {
+    height: 480px;
+  }
+}
+/*Secondary navigation*/
+.nav__links__col {
+  height: 118px;
+}
+
+.nav__item {
+  background: #EBF1F7;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.nav__item-desc {
+  font: normal bold 18px "Mulish", sans-serif;
+  letter-spacing: 0;
+  color: #0F5499;
+}
+.nav__item-img {
+  width: 24px;
+  height: 40px;
+}
+.nav__item-link {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.nav__item:hover {
+  background: transparent linear-gradient(116deg, #004380 0%, #002240 100%);
+  color: #FBBB0E;
+}
+
+.nav__links__col:hover .nav__item-desc {
+  color: #FBBB0E;
+}
+
+@media screen and (min-width: 576px) {
   .nav__container {
     padding-top: 25px;
     padding-bottom: 15px;
   }
-  /*Actualities*/
+}
+@media screen and (min-width: 992px) {
+  .nav__container {
+    max-width: 1600px;
+  }
+  .nav__item-desc {
+    font-size: 22px;
+  }
+}
+/*Actualities*/
+.actualities {
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+.actualities__row {
+  text-align: center;
+}
+.actualities__header {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.actuality {
+  border-bottom: 1px solid #DAE6F2;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.actuality__date {
+  font: normal italic 16px "Noto Sans", sans-serif;
+  color: #004380;
+}
+.actuality__date::before {
+  font-style: normal;
+  display: inline-block;
+  line-height: 1px;
+  content: "\f073";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 5px;
+}
+.actuality__desc {
+  margin-top: 16px;
+}
+.actuality__header {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #007AF2;
+  line-height: 28px;
+}
+.actuality__link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.actuality:hover .actuality__header {
+  text-decoration: none;
+  color: #004380;
+}
+
+@media screen and (min-width: 576px) {
   .actuality__img {
     margin-right: 15px;
   }
@@ -514,26 +549,54 @@ li {
   }
 }
 @media screen and (min-width: 992px) {
-  /*Main navigation*/
-  .main-nav__link {
-    font-size: 20px;
+  /*Actualities*/
+  .actuality {
+    height: 206px;
   }
-  .main-nav__links {
-    width: 90%;
-    max-width: 1600px;
-  }
-  /*Opening background*/
-  .opening-background {
-    height: 480px;
-  }
-  /*Secondary navigation*/
-  .nav__container {
-    max-width: 1600px;
-  }
-  .nav__item-desc {
+  .actuality__header {
     font-size: 22px;
   }
+  .actuality__date {
+    font-size: 18px;
+  }
+  .actualities__header {
+    text-align: left;
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 992px) {
   /*Actualities*/
+  .actuality {
+    height: 206px;
+  }
+  .actuality__header {
+    font-size: 22px;
+  }
+  .actuality__date {
+    font-size: 18px;
+  }
+  .actualities__header {
+    text-align: left;
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /*Actualities*/
+  .actuality {
+    height: 206px;
+  }
+  .actuality__header {
+    font-size: 22px;
+  }
+  .actuality__date {
+    font-size: 18px;
+  }
+  .actualities__header {
+    text-align: left;
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 992px) {
   .actuality {
     height: 206px;
   }
